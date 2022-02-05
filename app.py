@@ -1,9 +1,12 @@
 import requests, os, uuid, json
 from dotenv import load_dotenv
+
+# Saisir notre clé
 load_dotenv()
 
 from flask import Flask, redirect, url_for, request, render_template, session
 
+# Créer l'application pour Flask
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
@@ -54,3 +57,4 @@ def index_post():
         original_text=original_text,
         target_language=target_language
     )
+    
