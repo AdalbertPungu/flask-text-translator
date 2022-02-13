@@ -42,7 +42,7 @@ def index_post():
     # Create the body of the request with the text to be translated
     body = [{ 'text': original_text }]
 
-    # Make the call using post
+    # Faire l'appel en utilisant post
     translator_request = requests.post(constructed_url, headers=headers, json=body)
     # Récupérer la réponse JSON
     translator_response = translator_request.json()
