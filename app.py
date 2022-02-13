@@ -44,7 +44,7 @@ def index_post():
 
     # Make the call using post
     translator_request = requests.post(constructed_url, headers=headers, json=body)
-    # Retrieve the JSON response
+    # Récupérer la réponse JSON
     translator_response = translator_request.json()
     # Récupérer la traduction
     translated_text = translator_response[0]['translations'][0]['text']
