@@ -46,7 +46,7 @@ def index_post():
     translator_request = requests.post(constructed_url, headers=headers, json=body)
     # Retrieve the JSON response
     translator_response = translator_request.json()
-    # Retrieve the translation
+    # Récupérer la traduction
     translated_text = translator_response[0]['translations'][0]['text']
 
     # Appelez le modèle de rendu, en passant le texte traduit,
