@@ -28,7 +28,7 @@ def index_post():
     path = '/translate?api-version=3.0'
     # Add the target language parameter
     target_language_parameter = '&to=' + target_language
-    # Create the full URL
+    # Création d'un URL complet
     constructed_url = endpoint + path + target_language_parameter
 
     # Configuration des informations de header, qui incluent notre clé d'abonnement
