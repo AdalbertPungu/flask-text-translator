@@ -49,8 +49,8 @@ def index_post():
     # Retrieve the translation
     translated_text = translator_response[0]['translations'][0]['text']
 
-    # Call render template, passing the translated text,
-    # original text, and target language to the template
+    # Appelez le modèle de rendu, en passant le texte traduit,
+    # texte d'origine et langue cible du modèle
     return render_template(
         'results.html',
         translated_text=translated_text,
