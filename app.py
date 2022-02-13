@@ -31,7 +31,7 @@ def index_post():
     # Create the full URL
     constructed_url = endpoint + path + target_language_parameter
 
-    # Set up the header information, which includes our subscription key
+    # Configuration des informations de header, qui incluent notre clé d'abonnement
     headers = {
         'Ocp-Apim-Subscription-Key': key,
         'Ocp-Apim-Subscription-Region': location,
