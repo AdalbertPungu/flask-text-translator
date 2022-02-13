@@ -26,7 +26,7 @@ def index_post():
 
     # Indicate that we want to translate and the API version (3.0) and the target language
     path = '/translate?api-version=3.0'
-    # Add the target language parameter
+    # Ajout des paramètres de la langue ciblé
     target_language_parameter = '&to=' + target_language
     # Création d'un URL complet
     constructed_url = endpoint + path + target_language_parameter
