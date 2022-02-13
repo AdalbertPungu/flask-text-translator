@@ -19,7 +19,7 @@ def index_post():
     original_text = request.form['text']
     target_language = request.form['language']
 
-    # Load the values from .env
+    # Chargement des valeurs qui provient du fichier .env
     key = os.environ['KEY']
     endpoint = os.environ['ENDPOINT']
     location = os.environ['LOCATION']
