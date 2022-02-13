@@ -15,7 +15,7 @@ def index():
 
 @app.route('/', methods=['POST'])
 def index_post():
-    # Read the values from the form
+    # Lecture des valeurs du formulaire
     original_text = request.form['text']
     target_language = request.form['language']
 
